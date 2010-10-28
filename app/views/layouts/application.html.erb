@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>Song of the Moment | <%= title %></title>
-<%= csrf_meta_tag %>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<%= csrf_meta_tag %>
 <%= stylesheet_link_tag 'styles' %>
 </head>
 <body>
 <div id="container">
   <% unless controller.action_name == "home" %>
-  <div id="navigation"><a href="everybodys">Everybody's</a>&nbsp;|&nbsp;<a href="join">Join</a>&nbsp;|&nbsp;<a href="login">Login</a></div>
+  <div id="navigation"><%= render 'layouts/navigation/logged_out' %></div>
   <% end %>
   <div id="logo"><%= @title %><%= image_tag "songofthemomentis.gif", :size => "370x45", :alt => @title+"songofthemoment.is" %></div>
 	<%= yield %>
