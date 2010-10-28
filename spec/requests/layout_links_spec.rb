@@ -21,4 +21,21 @@ describe "LayoutLinks" do
     get '/join'
     response.should have_selector('title', :content => "Join")
   end
+  
+  it "should have the right links on the layout" do
+    visit root_path
+    click_link "Join"
+    response.should have_selector('title', :content => "Join")
+    # @todo when site is more clickable, fill in these lines
+=begin    
+    click_link "Help"
+    response.should # fill in
+    click_link "Contact"
+    response.should # fill in
+    click_link "Home"
+    response.should # fill in
+    click_link "Sign up now!"
+    response.should # fill in
+=end
+  end  
 end
