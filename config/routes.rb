@@ -1,4 +1,6 @@
 Songofthemoment::Application.routes.draw do
+  
+  match '/join', :to => 'user#new'
   match '/contact', :to => 'pages#contact'
   match '/help',    :to => 'pages#help'
 
