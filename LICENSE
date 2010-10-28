@@ -1,14 +1,15 @@
-Michael Hartl's "Ruby on Rails Tutorial: Learn Rails by Example" is being used
-as a guide to write Song of the Moment. Thanks to him for the help. Overtime, 
-I hope to put my own stamp on the application.
+Michael Hartl's "Ruby on Rails Tutorial: Learn Rails by Example" 
+is being usedas a guide to write Song of the Moment. Thanks to 
+him for the help. Overtime, I hope to put my own stamp on the 
+application.
 
 Song of the Moment
-Copyright (c) 2010 by by Simeon F. Willbanks
+Copyright (c) 2010 by Simeon F. Willbanks
 
 Ruby on Rails Tutorial: Learn Rails by Example.
 Copyright (c) 2010 by Michael Hartl. 
-All source code in Ruby on Rails Tutorial is available under the MIT License 
-and the Beerware License.
+All source code in Ruby on Rails Tutorial is available under 
+the MIT License and the Beerware License.
 
 http://www.opensource.org/licenses/mit-license.php
 http://en.wikipedia.org/wiki/Beerware
