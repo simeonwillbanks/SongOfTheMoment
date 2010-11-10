@@ -1,2 +1,32 @@
-<h1>User#new</h1>
-<p>Find me in app/views/user/new.html.erb</p>
+<div>
+<%= form_for(@user) do |f| %>  
+  <fieldset>
+    <span>All fields required</span>
+    <%= f.label :name %>
+    <% @user.errors[:name].each do |error| %>
+      <span><%= error.humanize %></span>
+    <% end %>
+    <%= f.text_field :name%>
+    
+    <%= f.label :email %>
+    <% @user.errors[:email].each do |error| %>
+      <span><%= error.humanize %></span>
+    <% end %>
+    <%= f.text_field :email %>
+    
+    <%= f.label :password %>
+    <% @user.errors[:password].each do |error| %>
+      <span><%= error.humanize %></span>
+    <% end %>
+    <%= f.password_field :password %>
+    
+    <%= f.label :password_confirmation, "Confirm" %>
+    <% @user.errors[:password_confirmation].each do |error| %>
+      <span><%= error.humanize %></span>
+    <% end %>
+    <%= f.password_field :password_confirmation %>
+    
+    <%= f.submit "Join", :id => "submit" %>
+  </fieldset>
+<% end %>
+</div>
