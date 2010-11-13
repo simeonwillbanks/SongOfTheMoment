@@ -13,6 +13,8 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       # Handle a successful save.
+      flash[:success] = "Welcome to Song of the Moment!"
+      redirect_to @user
     else
       @title = "Join"
       render 'new'
